@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from scipy.integrate import odeint
 #import sys
 
-def SIQR(v, t, beta, gamma, p):
+def SIQR(v, t, beta, gamma, gamma_dash, p):
     """
     Define the SIQR model.
     
@@ -34,14 +34,14 @@ def SIQR(v, t, beta, gamma, p):
     beta_ss_ii = beta * v[0] * v[1]
     rvalue[0] = - beta_ss_ii
     rvalue[1] = (1 - q) * beta_ss_ii - p * v[1] - gamma * v[1]
-    rvalue[2] = q * beta_ss_ii + p * v[1] - gamma * v[2]
-    rvalue[3] = gamma * v[1] + gamma * v[2]
+    rvalue[2] = q * beta_ss_ii + p * v[1] - gamma_dash * v[2]
+    rvalue[3] = gamma * v[1] + gamma_dash * v[2]
     return rvalue
 
 
 
 
-def calc_proc(times, beta_const, gamma_const, p):
+def calc_proc(times, beta_const, gamma_const, gamma_dash_const, p):
     """
     数値計算 using odeint.
     
@@ -66,7 +66,7 @@ def calc_proc(times, beta_const, gamma_const, p):
     R_0=0
     ini_state = [S_0,I_0,Q_0,R_0]
 
-    args  =(beta_const, gamma_const, p)
+    args  =(beta_const, gamma_const, gamma_dash_const, p)
 
     N_total = S_0 + I_0 + Q_0 + R_0
     
@@ -78,14 +78,15 @@ def calc_proc(times, beta_const, gamma_const, p):
 
 
 def plot(R0, p, times, result):
-    str_out = "基本再生産数 : {}".format(format(R0, ".3f"))
+    str_out = "basic rate of reproduction : {}".format(format(R0, ".3f"))
     str_out += "  "
-    str_out += "隔離率 : {}".format(format(p, ".3f"))
+    str_out += "Isolation rate : {}".format(format(p, ".3f"))
     plt.title(str_out)
-    plt.xlabel('日数')
-    plt.ylabel('人数')
-    plt.plot(times,result)
-    plt.legend(['未感染者','感染 非隔離者','感染 隔離者','回復者'])
+    plt.xlabel('number of days')
+    plt.ylabel('the number of people')
+    plt.plot(times, result)
+    plt.legend(['uninfected person','Infection Non-isolator','Infection Quarantine','recuperator'])
+    plt.savefig("result.png")
     plt.show()
 
 
@@ -93,18 +94,16 @@ if __name__ == "__main__":
     #sys.stderr.write("*** start ***\n")
     t_max = 160
     dt = 0.01
-    beta_const = 0.2/1000
-    gamma_const = 0.1
+    beta_const = 0.1/1000
+    gamma_const = 0.03
+    gamma_dash_const = 0.3
     p = 0.0
     
     #sys.stderr.write("p_kakuri = %.3f\n" % p)
 
     times =np.arange(0,t_max, dt)
-    R0,result = calc_proc(times,beta_const,gamma_const,p)
+    R0,result = calc_proc(times, beta_const, gamma_const, gamma_dash_const, p)
 
     plot(R0,p,times,result)
 #
     #sys.stderr.write("*** end ***\n")
-
-
-
