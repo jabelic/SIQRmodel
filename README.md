@@ -48,7 +48,7 @@ Sは市中感染者, Iは市中感染者, Qは隔離感染者, Rは快復者及�
 これからPCR検査率を下げ、接触率を下げる努力もしなかった場合
 
 
-<img src="pic/newSIQR-I-case1.png" width="45%"><img src="pic/newSIQR-R-case1.png" width="45%">
+<img src="pic/newSIQR-I-case1.png" width="50%"><img src="pic/newSIQR-R-case1.png" width="50%">
 
 
 #### case2
