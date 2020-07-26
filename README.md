@@ -11,7 +11,7 @@ SIQRモデルはSIRモデルという疫学における区画モデルの発展�
 
 小田垣論文では, 以下のようなモデルが提唱されている.
 
-<img src="https://github.com/jabelic/SIQRmodel/blob/master/pic/odgk_siqr.pdf" width="50%">
+<img src="pic/odgk_siqr.pdf" width="30%">
 
 Sは市中感染者, Iは市中感染者, Qは隔離感染者, Rは快復者及び死亡者である. βは市中感染者と未感染者の全ての接触のうち感染する確率を表し, 未感染者は(1-q)βSIが市中感染者となり, 残りのqβSIは隔離感染者となるとしている. γは市中感染者の治癒率であり感染から治癒の期間の逆数とし, γ'は隔離感染者の治癒率であり発症から治癒の期間の逆数としている.ここでは[小田垣教授の論文の読み方](https://kichiro-talk.hatenablog.com/entry/2020/05/27/182644)より感染力を持つのは感染から発症までおよそ5日, 発症後のおよそ7日としている. すなわちγ=1/12, γ'=1/10とした. 発症が確認されれば感染力が咳などの症状の影響で感染リスクが拡大すると仮定して発症後の感染力を持つ期間を10日と独自に仮定した.
 
@@ -35,7 +35,7 @@ I:市中感染者 -->|"pI"|Q:隔離感染者
 Q:隔離感染者 -->|"γ'Q"|R:快復者/死亡者
 I:市中感染者-->|"γI"|R:快復者/死亡者
 ```
-<img src="https://github.com/jabelic/SIQRmodel/blob/master/pic/siqr.pdf" width="50%">
+<img src="https://github.com/jabelic/SIQRmodel/blob/master/pic/siqr.pdf" width="30%">
 ![siqr.pdf](https://github.com/jabelic/SIQRmodel/blob/master/pic/siqr.pdf)
 
 これをシミュレートし, 分析を試みた.
