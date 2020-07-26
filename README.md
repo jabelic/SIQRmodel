@@ -38,7 +38,6 @@ I:市中感染者-->|"γI"|R:快復者/死亡者
 
 
 <img src="pic/siqr.png" width="50%">
-![siqr.pdf](pic/siqr.png)
 
 これをシミュレートし, 分析を試みた.
 
