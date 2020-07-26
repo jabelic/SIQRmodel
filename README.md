@@ -46,31 +46,31 @@ Sは市中感染者, Iは市中感染者, Qは隔離感染者, Rは快復者及�
 #### case1
 陽性者隔離率1％, 接触率12.6% (3月基準)
 これからPCR検査率を下げ、接触率を下げる努力もしなかった場合
-<img src="pic/newSIQR-I-case1.png" width="50%"><img src="pic/newSIQR-R-case1.png" width="50%">
+<img src="pic/newSIQR-I-case1.png" width="45%"><img src="pic/newSIQR-R-case1.png" width="45%">
 
 
 #### case2
 陽性者隔離率5％, 接触率12.6% (3月基準)
 PCR検査率を上げる努力をし, 接触率を下げる努力をしなかった場合.
-<img src="pic/newSIQR-I-case2.png" width="50%"><img src="pic/newSIQR-R-case2.png" width="50%">
+<img src="pic/newSIQR-I-case2.png" width="45%"><img src="pic/newSIQR-R-case2.png" width="45%">
 
 
 #### case3
 陽性者隔離率1％, 接触率9.6% (5月基準)
 PCR検査率をあげる努力をせず, 外出自粛により接触率を下げた場合.
-<img src="pic/newSIQR-I-case3.png" width="50%"><img src="pic/newSIQR-R-case3.png" width="50%">
+<img src="pic/newSIQR-I-case3.png" width="45%"><img src="pic/newSIQR-R-case3.png" width="45%">
 
 
 #### case4
 陽性者隔離率5％, 接触率9.6% (5月基準)
 PCR検査率をあげる努力をし, 外出自粛により接触率を下げた場合.
-<img src="pic/newSIQR-I-case4.png" width="50%"><img src="pic/newSIQR-R-case4.png" width="50%">
+<img src="pic/newSIQR-I-case4.png" width="45%"><img src="pic/newSIQR-R-case4.png" width="45%">
 
 
 #### case5
 陽性者隔離率8％, 接触率12.6% (3月基準)
 PCR検査率をあげる努力をし, 外出自粛をせずにcase4の値を目指した場合.
-<img src="pic/newSIQR-I-case5.png" width="50%"><img src="pic/newSIQR-R-case5.png" width="50%">
+<img src="pic/newSIQR-I-case5.png" width="45%"><img src="pic/newSIQR-R-case5.png" width="45%">
 
 
 ## Analysis
