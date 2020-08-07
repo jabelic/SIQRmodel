@@ -47,7 +47,6 @@ Sは市中感染者, Iは市中感染者, Qは隔離感染者, Rは快復者及�
 陽性者隔離率1％, 接触率12.6% (3月基準)
 これからPCR検査率を下げ、接触率を下げる努力もしなかった場合
 
-
 <img src="pic/newSIQR-I-case1.png" width="50%"><img src="pic/newSIQR-R-case1.png" width="50%">
 
 
@@ -97,4 +96,8 @@ case1は基本的にわずかな陽性者を隔離するにとどまる政策を
 2. [新型コロナウイルス感染症のSIQRモデルからわかることー小田垣教授の論文の読み方](https://kichiro-talk.hatenablog.com/entry/2020/05/27/182644)
 
 3. [The SIR Model for Spread of Disease - The Differential Equation Model](https://www.maa.org/press/periodicals/loci/joma/the-sir-model-for-spread-of-disease-the-differential-equation-model)
+
+4. [東京都新型コロナウイルス感染症対策サイト](https://stopcovid19.metro.tokyo.lg.jp/)
+
+5.  [SIQR モデルの表示 - Qiita](https://qiita.com/ekzemplaro/items/d4b079da3f172f6535b9)
 
