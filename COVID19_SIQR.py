@@ -85,7 +85,7 @@ def calc_proc(times, beta_const, gamma_const, gamma_dash_const, p):
     return R0,result
 
 
-def plot(R0, p, times, result):
+def plot(R0, p, times, result, casename:str):
     str_out = "basic rate of reproduction : {}".format(format(R0, ".3f"))
     str_out += "  "
     str_out += "Isolation rate : {}".format(format(p, ".3f"))
@@ -96,7 +96,7 @@ def plot(R0, p, times, result):
     plt.ylim(0,10000000)
     plt.plot(times, result)
     plt.legend(['uninfected person','Infection Non-isolator','Infection Quarantine','recuperator'])
-    #plt.savefig("pic/newSIQR-case5.png")
+    plt.savefig(f"pic/newSIQR-{casename}.png")
     #plt.show()
 
 

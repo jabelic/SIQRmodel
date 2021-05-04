@@ -1,5 +1,5 @@
-NewSIQR.ipynb
-SEIQR.ipynb
-siqr.ipynb
+*.ipynb
 siqr.py
 .ipynb_checkpoints
+pipfile
+pipfile.lock
